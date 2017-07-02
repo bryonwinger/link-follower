@@ -30,7 +30,8 @@ defmodule TextLinker.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.11.1"},
-      {:floki, "~> 0.17.0"}
+      {:floki, "~> 0.17.0"},
+      {:poison, "~> 3.1"}
     ]
   end
 end

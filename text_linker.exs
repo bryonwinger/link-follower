@@ -12,8 +12,3 @@
   - open next link
   - repeat
 """
-
-defmodule TextLinker do
-  
-  
-end
