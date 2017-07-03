@@ -10,3 +10,7 @@ It's purpose is to extract ```<a>``` tags from an HTML document and allow the us
 mix escript.build
 ./linkfollower http://google.com
 ```
+
+## Known Issues
+
+Some styles of links crash the program.  Adding some tests will likely help here.
