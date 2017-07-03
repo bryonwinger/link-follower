@@ -72,22 +72,21 @@ defmodule TextLinker.Processor do
   end
 
   defp assemble_full_url(link, current_url) do
+    link = Regex.run(~r{(\w|\d|_|-)+.+[^/]}, link)
+    |> Enum.at(0)
+
     cond do
-      String.starts_with?(link, "//") ->
-        String.trim(current_url, "//") <> "/" <> link
-      String.starts_with?(link, "/") ->
-        String.trim(current_url, "/") <> "/" <> link
-      String.starts_with?(link, "./") ->
-        String.trim(current_url, "/") <> "/" <> link
-      String.starts_with?(link, "#") ->
-        String.trim(current_url, "/") <> "/" <> link
-      true ->
+      String.starts_with?(link, "http") ->
         link
+      String.starts_with?(link, "www.") ->
+        "http://#{link}"
+      true ->
+        "#{current_url}/#{link}"
     end
   end
 
   defp get_user_input(links, current_url) do  
-    choice = IO.gets("Choose a link to follow: ")
+    choice = IO.gets("Choose a link to follow (ctrl+c to exit): ")
     |> String.trim
     |> String.to_integer
 
