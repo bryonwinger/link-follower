@@ -1,19 +1,10 @@
 # LinkFollower
 
-**TODO: Add description**
+A Simple program written for learning basic Elixir syntax.  It doesn't do anything useful. :)
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `linkfollower` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [{:linkfollower, "~> 0.1.0"}]
-end
+```bash
+mix escript.build
+./linkfollower http://google.com
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/linkfollower](https://hexdocs.pm/linkfollower).
-
