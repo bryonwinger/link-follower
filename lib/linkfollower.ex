@@ -1,15 +1,16 @@
-defmodule TextLinker do
+defmodule LinkFollower do
   @moduledoc """
-  Documentation for TextLinker.
+  Documentation for LinkFollower.
   """
 
   @doc """
-  Hello world.
+  A simple program for following HTML links (<a> tags) at the command line. Not
+  intended to actually do anything useful.
 
   ## Examples
 
-      iex> TextLinker.hello
-      :world
+      ./linkfollower http://google.com
+      ...
 
   """
 
@@ -23,7 +24,7 @@ defmodule TextLinker do
   end
 
   def process(url) do
-    TextLinker.Processor.get(url)
+    LinkFollower.Processor.get(url)
   end
 
   defp parse_args(args) do

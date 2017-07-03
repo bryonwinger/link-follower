@@ -1,15 +1,10 @@
-defmodule TextLinker.Processor do
+defmodule LinkFollower.Processor do
   @moduledoc """
-  Documentation for TextLinker.
+  Documentation for LinkFollower.Processor
   """
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> TextLinker.hello
-      :world
+  TODO
 
   """
 

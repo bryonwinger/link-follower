@@ -1,6 +1,6 @@
-defmodule TextLinkerTest do
+defmodule LinkFollowerTest do
   use ExUnit.Case
-  doctest TextLinker
+  doctest LinkFollower
 
   test "the truth" do
     assert 1 + 1 == 2

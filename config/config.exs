@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure for your application as:
 #
-#     config :textlinker, key: :value
+#     config :linkfollower, key: :value
 #
 # And access this configuration in your application as:
 #
-#     Application.get_env(:textlinker, :key)
+#     Application.get_env(:linkfollower, :key)
 #
 # Or configure a 3rd-party app:
 #
